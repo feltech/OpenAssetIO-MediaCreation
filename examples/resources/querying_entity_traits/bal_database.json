@@ -1,0 +1,45 @@
+{
+  "managementPolicy": {
+    "read": {
+      "default": {
+        "openassetio-mediacreation:managementPolicy.Managed": {},
+        "openassetio-mediacreation:content.LocatableContent": {},
+        "openassetio-mediacreation:identity.DisplayName": {},
+        "openassetio-mediacreation:lifecycle.Version": {}
+      }
+    },
+    "write": {
+      "default": {
+        "openassetio-mediacreation:managementPolicy.Managed": {},
+        "openassetio-mediacreation:content.LocatableContent": {},
+        "openassetio-mediacreation:identity.DisplayName": {}
+      }
+    },
+    "managerDriven": {
+      "default": {
+        "openassetio-mediacreation:managementPolicy.Managed": {},
+        "openassetio-mediacreation:content.LocatableContent": {},
+        "openassetio-mediacreation:identity.DisplayName": {}
+      }
+    }
+  },
+  "entities": {
+    "project_artwork/logos/openassetio": {
+      "versions": [
+        {
+          "traits": {
+            "openassetio-mediacreation:usage.Entity": {},
+            "openassetio-mediacreation:identity.DisplayName": {
+              "name": "OpenAssetIO logo"
+            },
+            "openassetio-mediacreation:content.LocatableContent": {
+              "location": "file:///mnt/shows/artwork/logos/openassetio.png"
+            },
+            "openassetio-mediacreation:timeDomain.FrameRanged": {}
+          },
+          "supported_access_modes": ["read", "managerDriven"]
+        }
+      ]
+    }
+  }
+}
